@@ -17,7 +17,7 @@
 var PREFIX = '%%eclairjs\n';
 
 function initCode() {
-  if (process.env.ECLAIRJS_ADDMAGICJAR) {
+  if (process.env.ECLAIRJS_ADD_MAGIC_JAR) {
     return PREFIX;
   } else {
     return '';
