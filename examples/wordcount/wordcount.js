@@ -19,6 +19,9 @@ var spark = new eclairjs();
 
 var session = spark.sql.SparkSession.builder()
   .appName("Word Count")
+  //.master("local[*]")
+  //.master("spark://h620.inf.unisi.ch:7077")
+  //.master("spark://eduardos-mbp.mobile.usilu.net:7077")
   .getOrCreate();
 
 
